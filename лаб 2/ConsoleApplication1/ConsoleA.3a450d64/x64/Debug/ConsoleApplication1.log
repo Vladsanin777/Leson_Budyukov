@@ -1,3 +1,0 @@
-﻿  ConsoleApplication1.cpp
-  LINK : не найден или не выполнена сборка E:\Уроки c++\лаб 2\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe при последней инкрементной компоновке; выполняется полная компоновка
-LINK : fatal error LNK1105: не могу закрыть файл 'E:\Уроки c++\лаб 2\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe'; код ошибки 1224
