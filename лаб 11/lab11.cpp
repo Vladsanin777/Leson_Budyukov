@@ -1,17 +1,24 @@
 ﻿#include <iostream>
-#include <vector>
-#include <algorithm>
 using namespace std;
-int main() {
-	vector<int> a;
-	
-	for (int i = 1; i != 0;) {
-		cin >> i;
-		a.push_back(i);
-	}
-	reverse(a.begin(), a.end());
-	for (vector<int>::iterator i = a.begin(); i - a.begin() != a.size(); i++) {
-		cout << *i << endl;
-	}
-	return 0;
+int main()
+{
+    short numbers[10];
+    for (unsigned char i = 0; i < 10; i++)
+        cin >> numbers[i];
+    short indexMin, numberMin = -32768, element;
+    bool ifNoElement = true;
+    for (unsigned char i = 0; i < 10; i++) {
+        element = numbers[i];
+        if (ifNoElement && element % 2 == 0)
+            ifNoElement = false;
+        else if (!(numberMin > element && \
+            element % 2 == 1)) continue;
+        indexMin = i, numberMin = element;
+    }
+    if (ifNoElement) cout << "N0 "; else
+
+    cout << indexMin << endl;
+    for (unsigned char i = 0; i < 10; i++)
+        cout << numbers[i] << ' ';
+
 }
