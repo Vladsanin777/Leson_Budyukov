@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 int main() {
+    printf("Sokolovaay\t386\t4\t3\n");
     // d = dicimal o = octal x = sixteen
     long long d, o, x;
     scanf("%lld%llo%llx", &d, &o, &x);
